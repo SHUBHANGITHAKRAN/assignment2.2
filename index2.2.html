@@ -1,0 +1,288 @@
+
+Conversation with Gemini
+name=Assignment-2.2.md
+
+Assignment 2.2 — Personal Introduction Page[cite: 7]
+
+Task: Create a resume-style webpage to introduce yourself.[cite: 7]
+
+What to do:
+
+
+
+Write your name in the main heading.[cite: 7]
+2. Write an introduction paragraph in the About Me section.[cite: 7]
+
+3. Create sections for education, skills, and hobbies.[cite: 7]
+
+4. Use `h1` to `h6` headings in appropriate places.[cite: 7]
+
+5. Use `p` for paragraphs, `br` for line breaks, and `hr` for separators.[cite: 7]
+
+6. Use `strong`, `em`, and `i` for important text.[cite: 7]
+
+7. Organize related content using `div` and inline content using `span`.[cite: 7]
+
+Submission: The personal introduction webpage and its HTML code.[cite: 7]
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction - Resume Webpage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color: #1a365d;
+            margin-bottom: 5px;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            color: #2b6cb0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #2d3748;
+            margin-bottom: 2px;
+            font-size: 1.1rem;
+        }
+
+        h4 {
+            color: #718096;
+            margin-top: 0;
+            font-size: 0.95rem;
+            font-weight: normal;
+        }
+
+        h5 {
+            color: #4a5568;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h6 {
+            color: #a0aec0;
+            margin-top: 0;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #2d3748;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 8px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #cbd5e0;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #718096;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <!-- Header Section -->
+        <header>
+            <!-- Requirement 1: Main heading for name -->
+            <h1>Shubhangi Thakran</h1>
+            <span class="subtitle">Computer Science &amp; Engineering Student</span>
+            <br>
+            <span>Email: shubhangi@example.com | Location: Uttar Pradesh, India</span>
+        </header>
+
+        <!-- Requirement 5: hr for separator -->
+        <hr>
+
+        <!-- Requirement 2: About Me Section -->
+        <!-- Requirement 7: div for grouping sections -->
+        <div class="section">
+            <!-- Requirement 4: h1 to h6 heading tags -->
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a passionate first-year <strong>Computer Science and Engineering</strong> student with a keen interest in software development, web design, and computational logic. I enjoy solving complex problems through clean code and modern technology.
+            </p>
+            <div class="highlight-box">
+                <!-- Requirement 6: strong, em, and i tags -->
+                <p>
+                    <em>Goal:</em> To continuously build strong foundational skills in programming and computer science while exploring practical web development projects. <i>"Learning by building"</i> is my core philosophy.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Requirement 3: Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            
+            <div>
+                <h3>Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</h3>
+                <h4>Undergraduate Program | Enrolled 2026</h4>
+                <p>
+                    Currently focusing on core engineering fundamentals, linear algebra, wave physics, and computer programming concepts.
+                </p>
+            </div>
+
+            <br>
+
+            <div>
+                <h5>Higher Secondary Education</h5>
+                <h6>Science &amp; Mathematics Stream</h6>
+                <p>Completed with a strong foundation in Physics, Chemistry, and Mathematics.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Requirement 3: Skills Section -->
+        <div class="section">
+            <h2>Skills &amp; Technologies</h2>
+            
+            <p><strong>Programming &amp; Development:</strong></p>
+            <div>
+                <!-- Requirement 7: span for inline content -->
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Git &amp; GitHub</span>
+            </div>
+
+            <p><strong>Core Strengths:</strong></p>
+            <ul>
+                <li>Problem Solving &amp; Logic Building</li>
+                <li>Responsive Web Layouts (Flexbox &amp; Grid)</li>
+                <li>Analytical Thinking &amp; Mathematics</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Requirement 3: Hobbies Section -->
+        <div class="section">
+            <h2>Hobbies &amp; Interests</h2>
+            <p>
+                When I am not coding or studying engineering concepts, I enjoy engaging in creative and recreational activities:
+            </p>
+            <ul>
+                <li><strong>Exploring Technology:</strong> Keeping up with software tools and modern web design trends.</li>
+                <li><em>Collaborative Projects:</em> Participating in group problem-solving and coding hackathons.</li>
+                <li><i>Personal Styling &amp; Creative Arts:</i> Experimenting with aesthetic layouts, design styles, and creative expression.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2026 Shubhangi Thakran. Created for Assignment 2.2.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+Checklist of Assignment Requirements Covered:
+Main Heading (h1): Used for the full name at the top of the page.
+
+About Me Section: Contains an introductory paragraph outlining background and goals.
+
+Sections: Organized sections for Education, Skills, and Hobbies.
+
+Heading Hierarchy (h1 to h6):
+
+h1: Main Name Heading
+
+h2: Main Section Titles (About Me, Education, etc.)
+
+h3: Degree / Program Title
+
+h4: Program Subtitle / Year
+
+h5: School / Secondary Education Level
+
+h6: Specialization / Stream
+
+Formatting Elements (p, br, hr): Paragraphs used throughout, line breaks (<br>) for spacing/contact info, and horizontal rules (<hr>) for separating major sections.
+
+Text Formatting (strong, em, i):
+
+<strong>: Highlighting key terms like Computer Science and Engineering, Programming & Development, and hobby titles.
+
+<em>: Emphasizing Goal: and Collaborative Projects.
+
+<i>: Applied for italicized quote ("Learning by building") and Personal Styling & Creative Arts.
+
+Structural Tags (div, span): <div class="..."> used for structural blocks/containers and <span class="skill-tag"> used for individual inline skill elements and header contact details.
